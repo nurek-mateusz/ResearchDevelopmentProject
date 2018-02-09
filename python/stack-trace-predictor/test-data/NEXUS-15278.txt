@@ -1,0 +1,17 @@
+2017-12-21 09:08:16,900-0600 ERROR [quartz-3-thread-5] *SYSTEM org.sonatype.nexus.repository.browse.internal.RebuildBrowseNodesTask - Could not re-create browse nodes for repository: RepositoryImpl$$EnhancerByGuice$$c53e9f01{type=hosted, format=nuget, name='nuget-hosted'}
+org.sonatype.nexus.scheduling.TaskInterruptedException: Repository nuget-hosted is offline, rebuilding browse nodes was cancelled
+at org.sonatype.nexus.repository.browse.internal.RebuildBrowseNodesTask.checkContinuation(RebuildBrowseNodesTask.java:144)
+at org.sonatype.nexus.repository.browse.internal.RebuildBrowseNodesTask.execute(RebuildBrowseNodesTask.java:101)
+at org.sonatype.nexus.repository.RepositoryTaskSupport.execute(RepositoryTaskSupport.java:69)
+at org.sonatype.nexus.scheduling.TaskSupport.call(TaskSupport.java:93)
+at org.sonatype.nexus.quartz.internal.task.QuartzTaskJob.doExecute(QuartzTaskJob.java:145)
+at org.sonatype.nexus.quartz.internal.task.QuartzTaskJob.execute(QuartzTaskJob.java:108)
+at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+at org.sonatype.nexus.thread.internal.MDCAwareRunnable.run(MDCAwareRunnable.java:40)
+at org.apache.shiro.subject.support.SubjectRunnable.doRun(SubjectRunnable.java:120)
+at org.apache.shiro.subject.support.SubjectRunnable.run(SubjectRunnable.java:108)
+at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)

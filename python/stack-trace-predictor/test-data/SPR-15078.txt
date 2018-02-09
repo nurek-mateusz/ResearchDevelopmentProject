@@ -1,0 +1,5 @@
+java.lang.IllegalStateException: Could not resolve view with name ''.
+	at org.springframework.web.reactive.result.view.ViewResolutionResultHandler.lambda$resolveViews$5(ViewResolutionResultHandler.java:276) ~[spring-web-reactive-5.0.0.BUILD-SNAPSHOT.jar:5.0.0.BUILD-SNAPSHOT]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:111) [reactor-core-3.0.4.RELEASE.jar:3.0.4.RELEASE]
+	at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:990) ~[reactor-core-3.0.4.RELEASE.jar:3.0.4.RELEASE]
+	at reactor.core.publisher.MonoCollectList$MonoBufferAllSubscriber.onComplete(MonoCollectList.java:113) ~[reactor-core-3.0.4.RELEASE.jar:3.0.4.RELEASE]
